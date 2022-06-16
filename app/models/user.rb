@@ -5,6 +5,7 @@ class User < ApplicationRecord
 
   has_many :my_heros
   has_many :heros, through: :my_heros
+  has_many :comments
 
 
 end
