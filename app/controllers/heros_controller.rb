@@ -37,7 +37,12 @@ class HerosController < ApplicationController
     hero.third_power = params[:third_power] || hero.third_power
     hero.save
     render json: hero
+  end
 
+  def destroy
+    hero = Hero.find_by(id: params[:id])
+    hero.delete
+    render json: { message: "Hero Destroyed" }
   end
 
 end
