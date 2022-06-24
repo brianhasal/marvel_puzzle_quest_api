@@ -47,7 +47,7 @@ Hero.create!(
   name: "Silver Surfer (Skyrider)",
   stars: 5,
   character_id: 1009592,
-  cover_art_id: 00000,
+  cover_art_id: 4470,
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",

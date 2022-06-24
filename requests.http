@@ -1,0 +1,20 @@
+### Heros Index Action
+GET http://localhost:3000/heroes
+
+### Heros Create Action
+POST http://localhost:3000/heroes/new.json
+Content-Type: application/json 
+
+{
+  "name": "test n!!!",
+  "stars": 4,
+  "character_id": 000,
+  "cover_art_id": 000,
+  "game_description": "test gd",
+  "first_power": "test fp",
+  "second_power": "test sp",
+  "third_power": "test tp",
+}
+
+### Heros Show Action
+GET http://localhost:3000/heroes/1.json

@@ -1,0 +1,28 @@
+class HerosController < ApplicationController
+
+  def index
+    heros = Hero.all
+    render json: heros
+  end
+
+  def create
+    hero = Hero.new(
+      name: params[:name],
+      stars: params[:stars],
+      character_id: params[:character_id],
+      cover_art_id: params[:cover_art_id],
+      game_description: params[:game_description],
+      first_power: params[:first_power],
+      second_power: params[:second_power],
+      third_power: params[:third_power]
+    )
+    hero.save
+    render json: hero
+  end
+
+  def show
+    hero = Hero.find_by(id: params[:id])
+    render json: hero
+  end
+
+end
