@@ -6,10 +6,10 @@ POST http://localhost:3000/heroes/new.json
 Content-Type: application/json 
 
 {
-  "name": "test n!!!",
+  "name": "test n!",
   "stars": 4,
-  "character_id": "0011",
-  "cover_art_id": "0011",
+  "character_id": 1,
+  "cover_art_id": 2,
   "game_description": "test gd",
   "first_power": "test fp",
   "second_power": "test sp",
@@ -18,3 +18,11 @@ Content-Type: application/json
 
 ### Heros Show Action
 GET http://localhost:3000/heroes/1.json
+
+### Heros Update Action
+PATCH http://localhost:3000/heroes/10.json
+Content-Type: application/json 
+
+{
+  "name": "test n again!"
+}

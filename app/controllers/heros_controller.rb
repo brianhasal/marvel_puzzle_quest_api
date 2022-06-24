@@ -1,7 +1,7 @@
 class HerosController < ApplicationController
 
   def index
-    heros = Hero.all
+    heros = Hero.all.order(:id)
     render json: heros
   end
 
@@ -23,6 +23,21 @@ class HerosController < ApplicationController
   def show
     hero = Hero.find_by(id: params[:id])
     render json: hero
+  end
+
+  def update
+    hero = Hero.find_by(id: params[:id])
+    hero.name = params[:name] || hero.name
+    hero.stars = params[:stars] || hero.stars
+    hero.character_id = params[:character_id] || hero. character_id
+    hero.cover_art_id = params[:cover_art_id] || hero. cover_art_id
+    hero.game_description = params[:game_description] || hero.game_description
+    hero.first_power = params[:first_power] || hero.first_power
+    hero.second_power = params[:second_power] || hero.second_power
+    hero.third_power = params[:third_power] || hero.third_power
+    hero.save
+    render json: hero
+
   end
 
 end
