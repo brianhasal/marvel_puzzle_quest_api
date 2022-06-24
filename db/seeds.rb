@@ -29,7 +29,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073799/capstone_images/covers/wolverine_x_force_cover_ipx7z3.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/wolverine_x_force_char_hy1mc1.jpg"
 )
 
 Hero.create!(
@@ -40,7 +42,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075641/capstone_images/covers/invisible_woman_classic_coverj_mzgrb9.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/invisible_woman_classic_char_mjytxd.jpg"
 )
 
 Hero.create!(
@@ -51,7 +55,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/silver_surfer_skyrider_cover_dvzvfe.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/silver_surfer_skyrider_char_lvmfel.jpg"
 )
 
 Hero.create!(
@@ -62,7 +68,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073799/capstone_images/covers/wolverine_old_man_logan_cover_rehqon.webp",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/wolverine_old_man_logan_char_edygsg.jpg"
 )
 
 Hero.create!(
@@ -73,7 +81,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075558/capstone_images/covers/kamala_khan_origin_cover_naanmg.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/kamala_khan_origin_char_e67dbt.jpg"
 )
 
 Hero.create!(
@@ -84,7 +94,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075831/capstone_images/covers/spider_man_back_in_black_ngalgz.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/spider_man_back_in_black_char_xkbiiu.jpg"
 )
 
 Hero.create!(
@@ -95,7 +107,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/jean_grey_all_new_cover_hndxje.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/jean_grey_all_new_char_icb6wv.jpg"
 )
 
 Hero.create!(
@@ -106,7 +120,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/polaris_cover_beeomu.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/polaris_char_able79.jpg"
 )
 
 Hero.create!(
@@ -117,7 +133,9 @@ Hero.create!(
   game_description: "sample description text",
   first_power: "first_power test description",
   second_power: "second_power test description",
-  third_power: "third_power test description"
+  third_power: "third_power test description",
+  cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075480/capstone_images/covers/apocalypse_cover_copy_gvuag8.jpg",
+  mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/apocalypse_char_fcm4be.jpg"
 )
 
 
