@@ -14,7 +14,9 @@ class HerosController < ApplicationController
       game_description: params[:game_description],
       first_power: params[:first_power],
       second_power: params[:second_power],
-      third_power: params[:third_power]
+      third_power: params[:third_power],
+      cover_url: params[:cover_url],
+      mpq_art_url: params[:mpq_art_url]
     )
     hero.save
     render json: hero
@@ -35,6 +37,8 @@ class HerosController < ApplicationController
     hero.first_power = params[:first_power] || hero.first_power
     hero.second_power = params[:second_power] || hero.second_power
     hero.third_power = params[:third_power] || hero.third_power
+    hero.cover_url = params[:cover_url] || hero.cover_url
+    hero.mpq_art_url = params[:mpq_art_url] || hero.mpq_art_url
     hero.save
     render json: hero
   end
