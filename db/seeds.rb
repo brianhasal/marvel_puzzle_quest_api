@@ -26,10 +26,10 @@ Hero.create!(
   stars: 4,
   character_id: 1009718,
   cover_art_id: 37689,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "X-Force does what needs doing to prtoect mutantkind when no one else will. Master hunter Wolverine leads the X-Men's secret assassination squad.",
+  first_power: "X-Force: Green = 8 - Wolverine unleashes his berserker rage, cutting with his adamantium claws. Deals 1590 damagae and destroys 15 tiles in three 3x3 X-shaped patterns. (Does not generate AP)",
+  second_power: "Surgical Strike: Black = 11 - Wolverine attacks with ruthless prescision, crippling his enemy's ability to retaliate. Destroys every tile in the enemy team's strongest color, dealing 910 damage per tile. (Does not generate AP.)",
+  third_power: "Recovery: Yellow = 9 - Wolverine's healing factor repairs his wounds, and he ferociously lashes out if interrupted. Places a 3-turn Yellow Countdown tile that restores 4957 health when activated. If the Countdown tile is matched, Wolverine destroys 6 random tiles, dealing 318 damage per tile. (Does not generate AP.)",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073799/capstone_images/covers/wolverine_x_force_cover_ipx7z3.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/wolverine_x_force_char_hy1mc1.jpg"
 )
@@ -39,10 +39,12 @@ Hero.create!(
   stars: 4,
   character_id: 1009366,
   cover_art_id: 00000,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "A founding member of the Fantastic Four, Sue Storm is a true leader and fiercely loyal to those she cares about.
+
+  The magnitude of Invisible Woman's psionic power is legendary.",
+  first_power: "Grant Invisibility: Yellow = 7 - Sue Storm uses her invisibility powers to vanish before the enemy's eyes, protecting herself and her teammates. Creates a Yellow Invisibility tile targeting Invisible Woman and 2 strength 252 Yellow Protect tiles, then turns her allies invisible for 2 turns.",
+  second_power: "Force Bubbles: Blue = 8 - The Invisible Woman traps her opponents in transparent bubbles of pure force, making them easy targets. Locks 4 random enemy Strike, Protect, Attack, Countdown, or Repeater tiles in Force Bubbles and creates 3 strength 199 Blue Strike tiles.",
+  third_power: "Force Field Crush: Green = 10 - The Invisble Woman mercilessly constricts her force bubbles around anyone unlucky enough to be trapped inside. If there are less than 4 Force Bubbles on the board, ceate 4 and deal 9613 damage. Otherwise, covert all tiles in Force Bubbles to basic tiles, removing the Force Bubbles anddealing 1375 damage for each.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075641/capstone_images/covers/invisible_woman_classic_coverj_mzgrb9.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/invisible_woman_classic_char_mjytxd.jpg"
 )
@@ -52,10 +54,13 @@ Hero.create!(
   stars: 5,
   character_id: 1009592,
   cover_art_id: 4470,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "His planet on the brink of annihilation, Norrin Radd made the ultimate sacrifice and struck a bargain with Galactus, becoming his herald in order to save his planet from the giant's insatiable hunger.
+
+  Imbued with the Power Cosmic, the Silveer Surfer eventually broke free of Galactus' control and now soars the spaceways, protecting innocent life throughout the galaxy.",
+  first_power: "Perfect Being: Blue = 9 - Silver Surfer glows bright with cosmic energy, removing any imperfections and spreading cosmic radiation across the battlefield. Restores 3550 health and converts 4 random basic tiles of a chosen color into Charged tiles.
+  (PASSIVE) Silver Surfer cannot be Stunned.",
+  second_power: "Cosmic Beam: Red = 7 - Silver Surfer focuses the Power Cosmic into an incredible beeam, blasting his enemies and irradiating the battlefield. Deals 2469 damage to the target and creeates 3 Charged tiles.",
+  third_power: "Silver Singularity: Black = 12 - Silver Surfer creates a minature black hole which begins to engulf everything. Transforms a chosen basic tile intoa 3-turn Black Hole tile which consumes 5 random tiles adjacent to it every turn, dealing damagee and generating AP. When it reaches 0, the Black Hole collapses dealing 2141 damage.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/silver_surfer_skyrider_cover_dvzvfe.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/silver_surfer_skyrider_char_lvmfel.jpg"
 )
@@ -65,10 +70,17 @@ Hero.create!(
   stars: 5,
   character_id: 1017810,
   cover_art_id: 00000,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "Wolverine was there the night that the Super Villains won. Manipulating him into taking down the X-Men, the villains broke Wolverine's spirit, leaving him alive in a world dominated by evil.
+
+  After decades in the Wastelands wracked with guilt, Logan finds himself pulled back to the present, where he's hunting down the villains responsible to prevent his future from coming to pass.",
+  first_power: "Living Legend: Black = 9 - Logan holds back, but his reputation strikes fear into his foes. Creates 4 strengths 226 Black Strike tiles and ends the turn.
+  If the team has 12 or more Yellow AP, also replaces all of Wolverine's powers with new powers.
+  Still Sharp: Black = 7 - Wolverine unleashes his pent-up anger, giving up anystrategic advantages in favor of a direct assault. Deals 4818 damage to the target and destroys 4 friendly special tiles, dealing 1302 damage for each tile destroyed. (Destroyed tiles do not generate AP.)",
+  second_power: "Living Legend: Black = 9 - Logan holds back, but his reputation strikes fear into his foes. Creates 4 strengths 226 Black Strike tiles and ends the turn.
+  If the team has 12 or more Yellow AP, also replaces all of Wolverine's powers with new powers.
+  Still Sharp: Black = 7 - Wolverine unleashes his pent-up anger, giving up anystrategic advantages in favor of a direct assault. Deals 4818 damage to the target and destroys 4 friendly special tiles, dealing 1302 damage for each tile destroyed. (Destroyed tiles do not generate AP.)",
+  third_power: "Reluctant Hero: Red - (PASSIVE) Logan does his best to avoid a fight, but can't help getting pulled in by the people he cares about. When an ally fires a power, if there are fewer than 5 friendly Strike tiles, Logan loses 876 health and creates 2 srength 136 tiles. =>
+  Finish the Fight: Red = 8 - Battered and beaten, Wolverine moves to put an end to the battle, mercilessly plunging his claws into his opponent. Deals 4746 damage. If Wolverine has less than 60 percent health, deals 4379 extra damage.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073799/capstone_images/covers/wolverine_old_man_logan_cover_rehqon.webp",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/wolverine_old_man_logan_char_edygsg.jpg"
 )
@@ -78,10 +90,16 @@ Hero.create!(
   stars: 5,
   character_id: 1017577,
   cover_art_id: 00000,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "Kamala Khan is just your average Pakistani-American Muslim 16-year-old growing up in Jersey City. She's a great student, an avid gamer, and a voracious fan fiction scribe. While she's got the best family and friends in the world, they might be a close second to her greatest love of all: Super Heroes, capital S, capital H. Kamala's got a very special affinity for Captain Marvel in particular. She often feels caught between many worlds, and she struggles to feel like she totally fits in at home or at school.
+
+  That is, until she gets super-powers like the heroes she's always looked up to. Things must be easier with super-powers, right?",
+  first_power: "I'm a Super Hero: Yellow = 10 - 'Whoever saves one person, it is as if she has saved all of mankind.' Kamala reaches out and generates a shield of crystalized light, protecting her friends. Creates 16 strength 93 Protect tiles and clears any stuns affecting her allies. If a Study tile exists on the board, she also Fortifies 6 of those tiles.",
+  second_power: "Embiggened Blast: Green = 7 - Kamala's cosmically embiggened fist packs an embiggened punch. Destroys a random 3x3 block of tiles and deals 1168 damage to the enemy team. If a Study tile exists on the board, she insteadselects the block of tilesto destroy and deals 469 damage.
+
+  (PASSIVE) Kamala's exuberance sometimes gets the better of her in the form of collateral damage, but it usually works out in the end. Whenever Kamala or an ally matches or destroys a friendly Special tile, she deals 641 damage to a random enemy. ",
+  third_power: "Cosmic Course: Blue = 6 - Kamala doesn't know everything, but she can learn! Luckily, her powers let her set her own perch from which to surveil the enemies and get their number. Kamala goes Airborne for 1 turn and creates a 2-turn Repeater tile that fortifies and converts 3 random friendly special tiles to Yellow or Green. Also creates a 6-turn Fortified Blue Study Countdown tile that powers up her other abilities. If a Study tile already exists she instead improves 2 random friendly Strike, Attack, or Protect tiles by 50%.
+
+  (PASSIVE) Whenever an enemy fires an ability, Kamala generates 4 AP in one of her colors.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075558/capstone_images/covers/kamala_khan_origin_cover_naanmg.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/kamala_khan_origin_char_e67dbt.jpg"
 )
@@ -91,10 +109,12 @@ Hero.create!(
   stars: 5,
   character_id: 1009610,
   cover_art_id: 00000,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "After Spider-Man's costume was destroyed during the  first Secret Wars, he adopted a new, sleeker, black suit. After he discovered it was an alien symbiote, Spider-Man abandoned it and returned to his classic webs.
+
+  In rare times when Peeter Parker was pushede past his breaking point by his enemies, he has donned a replica of that black suit to show villians that even Spider-Man isn't so friendly.",
+  first_power: "Taek-web-do: Blue = 6 - Spider-Man unleashes a vicious flurry of prescision kicks and acrobaic flips, striking his enemy's weakest points. If Spider-Man is Invisible, he deals 4468 damage to the target. Otherwise, he stuns the target for 1 turn and deals 2247 damage.",
+  second_power: "Automotive Artillery: Green = 14 - Spotting his target in the distance, Spider-Man grabs a nearby parked car and hurls a 2 ton fastball at his opponent. Deals 3712 damage to the target enemy, ignoring the effects of any Protect tiles, and stuns a random enemy for 2 turns.",
+  third_power: "Shadowy Acrobatics: Purple - (PASSIVE) Peter darts through the shadows, using his foe's confusion to disappear completely. Enemy Strike tiles add 100% less damage (to a minimum of 1). While at least one enemy is Stunned, Spider-Man is Invisible.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075831/capstone_images/covers/spider_man_back_in_black_ngalgz.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/spider_man_back_in_black_char_xkbiiu.jpg"
 )
@@ -104,10 +124,12 @@ Hero.create!(
   stars: 4,
   character_id: 00000,
   cover_art_id: 51301,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "Jean Grey was just beginning to master her telekinetic powers when her teammate Beast pulleed her and the rest of the original X-Men from the past into the present.
+
+  Jean has already found ways to combine her telepathy and telkinesis into abilities no one's ever seen. Looking back at the fate of her adult self, teenage Jean decided to stay in the present to re-write the past.",
+  first_power: "Mind Over Matter: Purple = 10 - Jean telekineticallt grabs her enemies' weapons, suspending them in mid-air before flinging them back towards her foes in a hail of projectiles. Converts up to 6 random enemy special tiles to basic tiles and deals 4151 damage to the enemy team.",
+  second_power: "Psychic Feedback: Blue - (PASSIVE) Jean's telepathy strikes the enemy's mind at a critical moment. When the opponent makes a Match-5, Jean reduce AP in their strongest color by 6, stuns the enemy team for 2 turns, and deals 2219 damage to them.",
+  third_power: "Full of Surprises: Green = 12 - Combining her telekinesis and telepathy, Jean taps into an all-new range of psionic powers and blasts her enemies. Deals 3610 damage to the enemy team, then creates up to 4 random Strike, Attack, or Protect tiles of strength 193.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/jean_grey_all_new_cover_hndxje.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/jean_grey_all_new_char_icb6wv.jpg"
 )
@@ -117,10 +139,10 @@ Hero.create!(
   stars: 4,
   character_id: 1009499,
   cover_art_id: 47979,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "Raised by a non-mutant family, Lorna Dane struggles with embracing her powers and Mutant heritage - especially since her father is Magneto. Her complicated identitity had led Polaris down many different paths, and so the mistress of magnetism often plays both ally and enemy to other Mutants.",
+  first_power: "Iron Proficiency: Blue = 7 - Polaris seizes control of the iron in her enemy's blood, stopping them dead in their tracks. Stuns the target for 4 turns. Creates 4 friendly strength 187 Strike tiles and 4 enemy strength 64 tiles.",
+  second_power: "Electromagnetic Resonance: Purple - (PASSIVE) Polaris harnesses the electromagnetic energy and metal around her. Whenever your team matches or destroys a Strike, Attack, or Protect tiles, deal 1200 damage and create 3 friendly special tiles of that tile's type, each with stength 126.",
+  third_power: "Particle Accelerator: Green - (PASSIVE) Polaris unleashes high velocity energy projectiles on her enemy. At the start of Polaris' turn she deals 156 damage for each special tile on the board. If none exist, creates a friendly strength 321 Strike tile.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073798/capstone_images/covers/polaris_cover_beeomu.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073862/capstone_images/mpq_art/polaris_char_able79.jpg"
 )
@@ -130,10 +152,12 @@ Hero.create!(
   stars: 5,
   character_id: 1009156,
   cover_art_id: 00000,
-  game_description: "sample description text",
-  first_power: "first_power test description",
-  second_power: "second_power test description",
-  third_power: "third_power test description",
+  game_description: "After being persecuted as th first of his kind and given an eternity to harbor resentment, Apocalypse formed the belief that suffering is the key to true strength. He has judged humanity and found them wanting. Now, Apocalypse looms over mutantkind as an inescapable harbinger.",
+  first_power: "Forged in Fire: Black = 7 - Success requiressacrifice, and all will fel its burdens. Apocalypse destroys up to 4 friendly Protect tiles, dealing one hit of 3587 damage to random enemies for each one. If there are no friendly Protect tiles on the board, heals the lowest-health ally for a burst of 1446 health and creates 4 strength 68 Protect tiles. (Destroyed tiles do not deal damage or generate AP.)",
+  second_power: "Survival of the Fittest: Red = 7 - He who has suffered will deliver the weak to their doom. Deals 4 hits of 1271 damage to the lowest-health enemy, ignoring enemy protect tiles.",
+  third_power: "Shared Strength: Yellow = 7 - Apocalypse's watchful eye reveals the true power within. Creates 4 2-turn Repeater tiles that create 2 strength 45 protect tiles. While one of these Repeater tiles is on the board, damage done by friendly powers is increased by 2724.
+
+  (PASSIVE) If any of Apocalypse's active allies are Mutants, Apocalypse cannot be Stunned.",
   cover_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656075480/capstone_images/covers/apocalypse_cover_copy_gvuag8.jpg",
   mpq_art_url: "https://res.cloudinary.com/dvhdgjued/image/upload/v1656073861/capstone_images/mpq_art/apocalypse_char_fcm4be.jpg"
 )

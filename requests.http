@@ -13,11 +13,13 @@ Content-Type: application/json
   "game_description": "test gd",
   "first_power": "test fp",
   "second_power": "test sp",
-  "third_power": "test tp"
+  "third_power": "test tp",
+  "cover_url": "test cu",
+  "mpq_art_url": "test mpqa"
 }
 
 ### Heros Show Action
-GET http://localhost:3000/heroes/1.json
+GET http://localhost:3000/heroes/6.json
 
 ### Heros Update Action
 PATCH http://localhost:3000/heroes/10.json
@@ -28,4 +30,4 @@ Content-Type: application/json
 }
 
 ### Heros Destroy Action
-DELETE http://localhost:3000/heroes/11
+DELETE http://localhost:3000/heroes/10
