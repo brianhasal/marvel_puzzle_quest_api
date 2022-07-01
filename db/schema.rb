@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_24_124057) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_17_001550) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -25,17 +25,39 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_24_124057) do
 
   create_table "heros", force: :cascade do |t|
     t.string "name"
+    t.string "subname"
     t.integer "stars"
     t.integer "character_id"
     t.integer "cover_art_id"
     t.string "game_description"
-    t.string "first_power"
-    t.string "second_power"
-    t.string "third_power"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.string "first_power_name"
+    t.string "first_power_color"
+    t.string "first_power_cost"
+    t.string "first_power_description"
+    t.string "first_power_name_alt"
+    t.string "first_power_color_alt"
+    t.string "first_power_cost_alt"
+    t.string "first_power_description_alt"
+    t.string "second_power_name"
+    t.string "second_power_color"
+    t.string "second_power_cost"
+    t.string "second_power_description"
+    t.string "second_power_name_alt"
+    t.string "second_power_color_alt"
+    t.string "second_power_cost_alt"
+    t.string "second_power_description_alt"
+    t.string "third_power_name"
+    t.string "third_power_color"
+    t.string "third_power_cost"
+    t.string "third_power_description"
+    t.string "third_power_name_alt"
+    t.string "third_power_color_alt"
+    t.string "third_power_cost_alt"
+    t.string "third_power_description_alt"
     t.string "cover_url"
     t.string "mpq_art_url"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "my_heros", force: :cascade do |t|
