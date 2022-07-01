@@ -7,13 +7,35 @@ Content-Type: application/json
 
 {
   "name": "test n!",
+  "subname": "test subname",
   "stars": 4,
   "character_id": 1,
   "cover_art_id": 2,
   "game_description": "test gd",
-  "first_power": "test fp",
-  "second_power": "test sp",
-  "third_power": "test tp",
+  "first_power_name": "test fpN",
+  "first_power_color": "test fpCol",
+  "first_power_cost": "test fpCost",
+  "first_power_description": "test fpD",
+  "first_power_name_alt": "test fpNa",
+  "first_power_color_alt": "test fpCola",
+  "first_power_cost_alt": "test fpCosta",
+  "first_power_description_alt": "test fpDa",
+  "second_power_name": "test spN",
+  "second_power_color": "test spCol",
+  "second_power_cost": "test spCost",
+  "second_power_description": "test spD",
+  "second_power_name_alt": "test spNa",
+  "second_power_color_alt": "test spCola",
+  "second_power_cost_alt": "test spCosta",
+  "second_power_description_alt": "test spDa",
+  "third_power_name": "test tpN",
+  "third_power_color": "test tpCol",
+  "third_power_cost": "test tpCost",
+  "third_power_description": "test tpD",
+  "third_power_name_alt": "test tpNa",
+  "third_power_color_alt": "test tpCola",
+  "third_power_cost_alt": "test tpCosta",
+  "third_power_description_alt": "test tpDa",
   "cover_url": "test cu",
   "mpq_art_url": "test mpqa"
 }
@@ -31,3 +53,18 @@ Content-Type: application/json
 
 ### Heros Destroy Action
 DELETE http://localhost:3000/heroes/10
+
+
+
+###########################################
+
+### Users Create Action
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "username": "testa",
+  "email": "testa@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
