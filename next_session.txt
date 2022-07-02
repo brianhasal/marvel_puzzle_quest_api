@@ -1,0 +1,5 @@
+Continue with Rails API Authentication from Part 2: Login (create JSON web tokens)
+
+Start my_heros controller
+
+(Start comments controller)

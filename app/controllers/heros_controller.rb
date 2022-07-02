@@ -1,5 +1,6 @@
 class HerosController < ApplicationController
-
+  before_action :authenticate_user, only: [:create, :update, :destroy]
+  
   def index
     heros = Hero.all.order(:id)
     render json: heros

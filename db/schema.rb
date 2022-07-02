@@ -63,6 +63,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_17_001550) do
   create_table "my_heros", force: :cascade do |t|
     t.integer "user_id"
     t.integer "hero_id"
+    t.boolean "has_hero", default: false
     t.integer "first_power_count"
     t.integer "second_power_count"
     t.integer "third_power_count"

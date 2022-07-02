@@ -11,4 +11,12 @@ Rails.application.routes.draw do
   delete "heroes/:id" => "heros#destroy"
 
   post "/users" => "users#create"
+
+  post "/sessions" => "sessions#create"
+
+  get "/my_heroes" => "my_heros#index"
+  post "/my_heroes" => "my_heros#create"
+  get "/my_heroes/:id" => "my_heros#show"
+  patch "my_heroes/:id" => "my_heros#update"
+  delete "my_heroes/:id" => "my_heros#destroy"
 end

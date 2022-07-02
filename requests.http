@@ -1,12 +1,42 @@
+@host = http://localhost:3000
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTY4NDc1OTd9.yhsyMB7bcCosaj7x7pRCLxSaRxmeaAwkQgaYkYLDE38
+
+
+### Users Create Action
+POST {{host}}/users
+Content-Type: application/json
+
+{
+  "username": "testa",
+  "email": "testa@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
+
+###########################################
+
+
+### Sessions create (login)
+POST {{host}}/sessions.json
+Content-Type: application/json
+
+{
+  "email": "a@test.com",
+  "password": "password"
+}
+
+###########################################
+
 ### Heros Index Action
-GET http://localhost:3000/heroes
+GET {{host}}/heroes
 
 ### Heros Create Action
-POST http://localhost:3000/heroes/new.json
+POST {{host}}/heroes/new.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 {
-  "name": "test n!",
+  "name": "test n!!",
   "subname": "test subname",
   "stars": 4,
   "character_id": 1,
@@ -41,10 +71,12 @@ Content-Type: application/json
 }
 
 ### Heros Show Action
-GET http://localhost:3000/heroes/6.json
+GET {{host}}/heroes/6.json
+
 
 ### Heros Update Action
-PATCH http://localhost:3000/heroes/10.json
+PATCH {{host}}/heroes/10.json
+Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 {
@@ -52,19 +84,45 @@ Content-Type: application/json
 }
 
 ### Heros Destroy Action
-DELETE http://localhost:3000/heroes/10
+DELETE {{host}}/heroes/10
+Authorization: Bearer {{jwt}}
 
 
 
 ###########################################
 
-### Users Create Action
-POST http://localhost:3000/users
+### MyHeros Index Action
+GET {{host}}/my_heroes
+Authorization: Bearer {{jwt}}
+
+
+### MyHeros Create Action
+POST {{host}}/my_heroes
+Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "username": "testa",
-  "email": "testa@test.com",
-  "password": "password",
-  "password_confirmation": "password"
+  "hero_id": 9
 }
+
+
+### MyHeros Show Action
+GET {{host}}/my_heroes/10
+Authorization: Bearer {{jwt}}
+
+
+### MyHeros Update Action
+PATCH {{host}}/my_heroes/10
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+  "first_power_count": 1
+}
+
+### MyHeros Destroy Action
+DELETE {{host}}/my_heroes/10
+Authorization: Bearer {{jwt}}
+
+
+
