@@ -51,7 +51,7 @@ class HerosController < ApplicationController
   end
 
   def update
-    hero = Hero.find_by(id: params[:id])
+    @hero = Hero.find_by(id: params[:id])
     @hero.name = params[:name] || @hero.name
     @hero.subname = params[:subname] || @hero.subname
     @hero.stars = params[:stars] || @hero.stars
