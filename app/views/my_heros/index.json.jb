@@ -3,6 +3,7 @@
     id: my_hero.id,
     user_id: my_hero.user_id,
     hero_id: my_hero.hero_id,
+    hero: my_hero.hero,
     first_power_count: my_hero.first_power_count,
     second_power_count: my_hero.second_power_count,
     third_power_count: my_hero.third_power_count

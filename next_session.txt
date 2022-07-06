@@ -1,5 +1,10 @@
-Continue with Rails API Authentication from Part 2: Login (create JSON web tokens)
+      createMyHero: function() {
+        axios
+          .post("/my_heroes", this.newMyHerosParams)
+          .then((response) => {
+            console.log("Adding hero to team", response);
+            this.my_heros.push(response.data);
+          });
+      }
 
-Start my_heros controller
-
-(Start comments controller)
+      also newMyHerosParams: {}

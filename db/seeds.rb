@@ -379,7 +379,7 @@ MyHero.create!(
 
 MyHero.create!(
   user_id: 2,
-  hero_id: 4,
+  hero_id: 5,
   first_power_count: 3,
   second_power_count: 2,
   third_power_count: 1
