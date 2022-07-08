@@ -19,4 +19,10 @@ Rails.application.routes.draw do
   get "/my_heroes/:id" => "my_heros#show"
   patch "my_heroes/:id" => "my_heros#update"
   delete "my_heroes/:id" => "my_heros#destroy"
+
+  get "/comicvine/issues/" => "comicvines#issues_index"
+  get "/comicvine/volumes/" => "comicvines#volumes_index"
+  get "/comicvine/characters/" => "comicvines#characters_index"
+  get "/comicvine/characters_by_name/" => "comicvines#character_name_handler"
+
 end

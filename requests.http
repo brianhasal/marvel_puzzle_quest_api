@@ -125,4 +125,22 @@ DELETE {{host}}/my_heroes/10
 Authorization: Bearer {{jwt}}
 
 
+###########################################
 
+
+### Comicvine Issues Index
+GET http://localhost:3000/comicvine/issues.json
+
+### Comicvine Volumes Index
+GET http://localhost:3000/comicvine/volumes.json
+
+### Comicvine Characters Index
+GET http://localhost:3000/comicvine/characters.json
+
+### Comicvine Characters By Name
+GET http://localhost:3000/comicvine/characters_by_name.json
+Content-Type: application/json
+
+{
+  "input_name": "Cyclops"
+}
