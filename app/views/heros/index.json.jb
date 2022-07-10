@@ -4,6 +4,8 @@
     name: hero.name,
     subname: hero.subname,
     stars: hero.stars,
+    hover: false,
+    modal: false,
     character_id: hero.character_id,
     comicvine_id: hero.comicvine_id,
     cover_art_id: hero.cover_art_id,

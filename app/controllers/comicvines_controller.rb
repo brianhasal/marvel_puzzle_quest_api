@@ -37,7 +37,7 @@ class ComicvinesController < ApplicationController
   end
 
   def character_name_handler
-    input_name = params[:input_name]
+    input_name = params[:input_name].gsub(" ", "+")
     endpoint = "https://comicvine.gamespot.com/api"
     apikey = "#{Rails.application.credentials.comicvine_api_key}"
     api_string = "?api_key=#{apikey}"
@@ -84,7 +84,8 @@ class ComicvinesController < ApplicationController
   end  
 
   def character_by_id
-    input = params["character_id"]
+    input = params[:character_id]
+    # input = @hero.character_id
     character_id_path = character_id(input)
     response = marvel_url_handler(character_id_path)
     character = JSON.parse(response.body)["data"]["results"][0]
