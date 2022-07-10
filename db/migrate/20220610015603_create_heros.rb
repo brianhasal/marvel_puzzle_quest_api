@@ -5,6 +5,7 @@ class CreateHeros < ActiveRecord::Migration[7.0]
       t.string :subname
       t.integer :stars
       t.integer :character_id
+      t.string :comicvine_id
       t.integer :cover_art_id
       t.string :game_description
 

@@ -3,7 +3,7 @@ class ComicvinesController < ApplicationController
 
 
   def character_id(input)
-    return "/v1/public/characters/#{input}?limit=100&"
+    return "v1/public/characters/#{input}?limit=100&"
   end
 
   def images(path)
@@ -87,7 +87,7 @@ class ComicvinesController < ApplicationController
     input = params["character_id"]
     character_id_path = character_id(input)
     response = marvel_url_handler(character_id_path)
-    character = JSON.parse(response.body)
+    character = JSON.parse(response.body)["data"]["results"][0]
     render json: character
   end
 

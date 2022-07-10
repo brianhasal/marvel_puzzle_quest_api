@@ -28,6 +28,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_17_001550) do
     t.string "subname"
     t.integer "stars"
     t.integer "character_id"
+    t.string "comicvine_id"
     t.integer "cover_art_id"
     t.string "game_description"
     t.string "first_power_name"

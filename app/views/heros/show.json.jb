@@ -6,6 +6,7 @@
   subname: @hero.subname,
   stars: @hero.stars,
   character_id: @hero.character_id,
+  comicvine_id: @hero.comicvine_id,
   cover_art_id: @hero.cover_art_id,
   game_description: @hero.game_description,
   first_power_name: @hero.first_power_name,

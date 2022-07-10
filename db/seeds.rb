@@ -26,6 +26,7 @@ Hero.create!(
   subname: "X-Force",
   stars: 4,
   character_id: 1009718,
+  comicvine_id: "4005-1440",
   cover_art_id: 37689,
   game_description: "X-Force does what needs doing to prtoect mutantkind when no one else will. Master hunter Wolverine leads the X-Men's secret assassination squad.",
   first_power_name: "X-Force",
@@ -49,6 +50,7 @@ Hero.create!(
   subname: "Classic",
   stars: 4,
   character_id: 1009366,
+  comicvine_id: "4005-2190",
   cover_art_id: 00000,
   game_description: "A founding member of the Fantastic Four, Sue Storm is a true leader and fiercely loyal to those she cares about.
 
@@ -74,6 +76,7 @@ Hero.create!(
   subname: "Skyrider",
   stars: 5,
   character_id: 1009592,
+  comicvine_id: "4005-2502",
   cover_art_id: 4470,
   game_description: "His planet on the brink of annihilation, Norrin Radd made the ultimate sacrifice and struck a bargain with Galactus, becoming his herald in order to save his planet from the giant's insatiable hunger.
 
@@ -100,6 +103,7 @@ Hero.create!(
   subname: "Old Man Logan",
   stars: 5,
   character_id: 1017810,
+  comicvine_id: "4050-87624",
   cover_art_id: 00000,
   game_description: "Wolverine was there the night that the Super Villains won. Manipulating him into taking down the X-Men, the villains broke Wolverine's spirit, leaving him alive in a world dominated by evil.
 
@@ -138,6 +142,7 @@ Hero.create!(
   subname: "Origin",
   stars: 5,
   character_id: 1017577,
+  comicvine_id: "4005-94118",
   cover_art_id: 00000,
   game_description: "Kamala Khan is just your average Pakistani-American Muslim 16-year-old growing up in Jersey City. She's a great student, an avid gamer, and a voracious fan fiction scribe. While she's got the best family and friends in the world, they might be a close second to her greatest love of all: Super Heroes, capital S, capital H. Kamala's got a very special affinity for Captain Marvel in particular. She often feels caught between many worlds, and she struggles to feel like she totally fits in at home or at school.
 
@@ -167,6 +172,7 @@ Hero.create!(
   subname: "Back in Black",
   stars: 5,
   character_id: 1009610,
+  comicvine_id: "4005-1443",
   cover_art_id: 00000,
   game_description: "After Spider-Man's costume was destroyed during the  first Secret Wars, he adopted a new, sleeker, black suit. After he discovered it was an alien symbiote, Spider-Man abandoned it and returned to his classic webs.
 
@@ -192,6 +198,7 @@ Hero.create!(
   subname: "All-New X-Men",
   stars: 4,
   character_id: 1009327,
+  comicvine_id: "4005-3552",
   cover_art_id: 51301,
   game_description: "Jean Grey was just beginning to master her telekinetic powers when her teammate Beast pulleed her and the rest of the original X-Men from the past into the present.
 
@@ -217,6 +224,7 @@ Hero.create!(
   subname: "Lorna Dane",
   stars: 4,
   character_id: 1009499,
+  comicvine_id: "4005-1473",
   cover_art_id: 47979,
   game_description: "Raised by a non-mutant family, Lorna Dane struggles with embracing her powers and Mutant heritage - especially since her father is Magneto. Her complicated identitity had led Polaris down many different paths, and so the mistress of magnetism often plays both ally and enemy to other Mutants.",
   first_power_name: "Iron Proficiency",
@@ -239,8 +247,9 @@ Hero.create!(
   name: "Apocalypse",
   stars: 5,
   character_id: 1009156,
+  comicvine_id: "4005-7612",
   cover_art_id: 00000,
-  game_description: "After being persecuted as th first of his kind and given an eternity to harbor resentment, Apocalypse formed the belief that suffering is the key to true strength. He has judged humanity and found them wanting. Now, Apocalypse looms over mutantkind as an inescapable harbinger.",
+  game_description: "After being persecuted as the first of his kind and given an eternity to harbor resentment, Apocalypse formed the belief that suffering is the key to true strength. He has judged humanity and found them wanting. Now, Apocalypse looms over mutantkind as an inescapable harbinger.",
   first_power_name: "Forged in Fire",
   first_power_color: "Black",
   first_power_cost: "7",
