@@ -191,7 +191,7 @@ Hero.create!(
   name: "Jean Grey",
   subname: "All-New X-Men",
   stars: 4,
-  character_id: 00000,
+  character_id: 1009327,
   cover_art_id: 51301,
   game_description: "Jean Grey was just beginning to master her telekinetic powers when her teammate Beast pulleed her and the rest of the original X-Men from the past into the present.
 

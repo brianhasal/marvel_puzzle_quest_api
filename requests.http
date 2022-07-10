@@ -1,5 +1,5 @@
 @host = http://localhost:3000
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTY4NDc1OTd9.yhsyMB7bcCosaj7x7pRCLxSaRxmeaAwkQgaYkYLDE38
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc0NjAyNzB9.urVcQFz1VIrC2R7ioPVpu8tVw34iztsXX6DFT155mmM
 
 
 ### Users Create Action
@@ -142,5 +142,23 @@ GET http://localhost:3000/comicvine/characters_by_name.json
 Content-Type: application/json
 
 {
-  "input_name": "Cyclops"
+  "input_name": "Spider-Man"
+}
+
+###########################################
+
+### Marvel Character By ID
+GET http://localhost:3000/comicvine/character_by_id.json
+Content-Type: application/json
+
+{
+  "character_id": "1009610"
+}
+
+### Marvel Thumbnail By ID
+GET http://localhost:3000/comicvine/photo_by_id.json
+Content-Type: application/json
+
+{
+  "character_id": "1009610"
 }

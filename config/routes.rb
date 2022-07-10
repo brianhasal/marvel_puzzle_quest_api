@@ -24,5 +24,7 @@ Rails.application.routes.draw do
   get "/comicvine/volumes/" => "comicvines#volumes_index"
   get "/comicvine/characters/" => "comicvines#characters_index"
   get "/comicvine/characters_by_name/" => "comicvines#character_name_handler"
+  get "/comicvine/character_by_id/" => "comicvines#character_by_id"
+  get "/comicvine/photo_by_id/" => "comicvines#photo_by_id"
 
 end
