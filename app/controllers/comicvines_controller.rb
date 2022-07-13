@@ -2,7 +2,7 @@ class ComicvinesController < ApplicationController
 
 
 
-  def character_id(input)
+  def character_idm(input)
     return "v1/public/characters/#{input}?limit=100&"
   end
 
@@ -41,8 +41,8 @@ class ComicvinesController < ApplicationController
     endpoint = "https://comicvine.gamespot.com/api"
     apikey = "#{Rails.application.credentials.comicvine_api_key}"
     api_string = "?api_key=#{apikey}"
-    p "#{endpoint}/characters/#{api_string}&filter=name:#{input_name}&field_list=aliases,api_detail_url,deck,first_appeared_in_issue,image&format=json"
-    response = HTTP.get("#{endpoint}/characters/#{api_string}&filter=name:#{input_name}&field_list=aliases,api_detail_url,deck,first_appeared_in_issue,image,name,real_name&format=json")
+    p "#{endpoint}/characters/#{api_string}&filter=name:#{input_name}&field_list=aliases,api_detail_url,deck,description,first_appeared_in_issue,image&format=json"
+    response = HTTP.get("#{endpoint}/characters/#{api_string}&filter=name:#{input_name}&field_list=aliases,api_detail_url,deck,description,first_appeared_in_issue,image,name,real_name&format=json")
     character = JSON.parse(response.body)["results"][0]
     render json: character
   end  
@@ -84,16 +84,16 @@ class ComicvinesController < ApplicationController
   end  
 
   def character_by_id
-    input = params[:character_id]
-    character_id_path = character_id(input)
+    input = "1009610"
+    character_id_path = character_idm(input)
     response = marvel_url_handler(character_id_path)
-    character = JSON.parse(response.body)["data"]["results"][0]
-    render json: character
+    character = JSON.parse(response.body)["data"]["results"][0]["urls"][0]["url"]
+    render json: character.as_json
   end
 
   def photo_by_id
     input = params["character_id"]
-    character_id_path = character_id(input)
+    character_id_path = character_idm(input)
     response = marvel_url_handler(character_id_path)
     endpoint = JSON.parse(response.body)["data"]["results"][0]["thumbnail"]["path"]
     photo = images(endpoint)
