@@ -85,7 +85,6 @@ class ComicvinesController < ApplicationController
 
   def character_by_id
     input = params[:character_id]
-    # input = @hero.character_id
     character_id_path = character_id(input)
     response = marvel_url_handler(character_id_path)
     character = JSON.parse(response.body)["data"]["results"][0]
