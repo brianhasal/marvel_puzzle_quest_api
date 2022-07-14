@@ -11,6 +11,10 @@ class ComicvinesController < ApplicationController
   end
 
 
+
+
+  
+
   def marvel_url_handler(method_input) 
     endpoint = "https://gateway.marvel.com/"
     ts = Time.now.to_i
