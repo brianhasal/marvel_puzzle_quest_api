@@ -5,10 +5,10 @@ Rails.application.routes.draw do
   # root "articles#index"
 
   get "/heroes" => "heros#index"
-  post "/heroes" => "heros#create"
+  post "/heroes/new" => "heros#create"
   get "/heroes/:id" => "heros#show"
   patch "/heroes/:id" => "heros#update"
-  delete "heroes/:id" => "heros#destroy"
+  delete "/heroes/:id" => "heros#destroy"
 
   post "/users" => "users#create"
 
@@ -17,8 +17,8 @@ Rails.application.routes.draw do
   get "/my_heroes" => "my_heros#index"
   post "/my_heroes" => "my_heros#create"
   get "/my_heroes/:id" => "my_heros#show"
-  patch "my_heroes/:id" => "my_heros#update"
-  delete "my_heroes/:id" => "my_heros#destroy"
+  patch "/my_heroes/:id" => "my_heros#update"
+  delete "/my_heroes/:id" => "my_heros#destroy"
 
   get "/comicvine/issues/" => "comicvines#issues_index"
   get "/comicvine/volumes/" => "comicvines#volumes_index"

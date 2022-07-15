@@ -1,5 +1,5 @@
 @host = http://localhost:3000
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc0NjAyNzB9.urVcQFz1VIrC2R7ioPVpu8tVw34iztsXX6DFT155mmM
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc5Nzk1Mjh9.c5hxXjnlJmHioq7_WIrgkzizX66Abm6UvA-ObOB6cqs
 
 
 ### Users Create Action
@@ -28,7 +28,7 @@ Content-Type: application/json
 ###########################################
 
 ### Heros Index Action
-GET {{host}}/heroes
+GET {{host}}/heroes.json
 
 ### Heros Create Action
 POST {{host}}/heroes/new.json
@@ -36,11 +36,11 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 {
-  "name": "test n!!",
+  "name": "test n!!!",
   "subname": "test subname",
   "stars": 4,
-  "character_id": 1,
-  "cover_art_id": 2,
+  "character_id": 113,
+  "cover_art_id": 213,
   "game_description": "test gd",
   "first_power_name": "test fpN",
   "first_power_color": "test fpCol",
@@ -92,12 +92,12 @@ Authorization: Bearer {{jwt}}
 ###########################################
 
 ### MyHeros Index Action
-GET {{host}}/my_heroes
+GET {{host}}/my_heroes.json
 Authorization: Bearer {{jwt}}
 
 
 ### MyHeros Create Action
-POST {{host}}/my_heroes
+POST {{host}}/my_heroes.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
@@ -107,12 +107,12 @@ Content-Type: application/json
 
 
 ### MyHeros Show Action
-GET {{host}}/my_heroes/10
+GET {{host}}/my_heroes/3.json
 Authorization: Bearer {{jwt}}
 
 
 ### MyHeros Update Action
-PATCH {{host}}/my_heroes/10
+PATCH {{host}}/my_heroes/10.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
