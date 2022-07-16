@@ -23,5 +23,9 @@ class ApplicationController < ActionController::API
       render json: {}, status: :unauthorized
     end
   end
+
+  def hope
+    p "Hope!"
+  end
   
 end
