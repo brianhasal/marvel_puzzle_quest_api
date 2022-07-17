@@ -1,5 +1,5 @@
 @host = http://localhost:3000
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc5Nzk1Mjh9.c5hxXjnlJmHioq7_WIrgkzizX66Abm6UvA-ObOB6cqs
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgxNDIxOTJ9.i7BVR88qZs98AhVg12u_RJPak2iuIJ5D4rPiIXy4t1k
 
 
 ### Users Create Action
@@ -36,7 +36,7 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 {
-  "name": "test n!!!",
+  "name": "test r!",
   "subname": "test subname",
   "stars": 4,
   "character_id": 113,
@@ -75,16 +75,16 @@ GET {{host}}/heroes/6.json
 
 
 ### Heros Update Action
-PATCH {{host}}/heroes/10.json
+PATCH {{host}}/heroes/11.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json 
 
 {
-  "name": "test n again!"
+  "name": "test r again!"
 }
 
 ### Heros Destroy Action
-DELETE {{host}}/heroes/10
+DELETE {{host}}/heroes/11
 Authorization: Bearer {{jwt}}
 
 
@@ -112,16 +112,16 @@ Authorization: Bearer {{jwt}}
 
 
 ### MyHeros Update Action
-PATCH {{host}}/my_heroes/10.json
+PATCH {{host}}/my_heroes/11.json
 Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
-  "first_power_count": 1
+  "first_power_count": 4
 }
 
 ### MyHeros Destroy Action
-DELETE {{host}}/my_heroes/10
+DELETE {{host}}/my_heroes/11
 Authorization: Bearer {{jwt}}
 
 
@@ -129,16 +129,16 @@ Authorization: Bearer {{jwt}}
 
 
 ### Comicvine Issues Index
-GET http://localhost:3000/comicvine/issues.json
+GET {{host}}/comicvine/issues.json
 
 ### Comicvine Volumes Index
-GET http://localhost:3000/comicvine/volumes.json
+GET {{host}}/comicvine/volumes.json
 
 ### Comicvine Characters Index
-GET http://localhost:3000/comicvine/characters.json
+GET {{host}}/comicvine/characters.json
 
 ### Comicvine Characters By Name
-GET http://localhost:3000/comicvine/characters_by_name.json
+GET {{host}}/comicvine/characters_by_name.json
 Content-Type: application/json
 
 {
@@ -148,7 +148,7 @@ Content-Type: application/json
 ###########################################
 
 ### Marvel Character By ID
-GET http://localhost:3000/comicvine/character_by_id.json
+GET {{host}}/comicvine/character_by_id.json
 Content-Type: application/json
 
 {
@@ -156,7 +156,7 @@ Content-Type: application/json
 }
 
 ### Marvel Thumbnail By ID
-GET http://localhost:3000/comicvine/photo_by_id.json
+GET {{host}}/comicvine/photo_by_id.json
 Content-Type: application/json
 
 {
